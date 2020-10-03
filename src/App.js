@@ -14,6 +14,7 @@ function App() {
         {/* <Portfolio></Portfolio> */}
         {/* <Contact></Contact> */}
         {/* <Resume></Resume> */}
+        {/* <Footer></Footer> */}
       </main>
     </div>
   );
