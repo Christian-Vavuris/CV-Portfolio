@@ -7,34 +7,26 @@ function categorySelected(name) {
 function Nav() {
     const categories = [
         {
-            name: 'Commercial',
+            name: 'About Me',
             description: 
-            "Photos of grocery stores, food trucks, and other commerical projects"
+            "Hello!"
         }, 
-        { name: 'Portraits', description: 'Portraits of people in my life'},
-        { name: 'Food', description: 'Delicious delicacies'},
-        { name: 'Landscape', description: 'Fields, farmhouses, waterfallss, and the beauty of nature'},
+        { name: 'Portfolio', description: 'Projects I have worked on'},
+        { name: 'Contact', description: 'Contact Information'},
+        { name: 'Resume', description: 'My work record'},
     ];
     return (
         <header>
             <h2>
                 <a href="/">
-                    <span role="img" aria-label="camera"> 📸</span> Oh Snap!
+                    <span role="img" aria-label="camera"> 👨🏻‍💻 </span> Chris Vavuris Portfolio
                 </a>
             </h2>
             <nav>
                 <ul className="flex-row">
-                    <li className="mx-2">
-                        <a href="#about">
-                            About Me
-                        </a>
-                    </li>
-                    <li>
-                        <span>Contact</span>
-                    </li>
                     {categories.map((category) => (
                     <li
-                        className="mx-1"
+                        className="mx-2"
                         key={category.name}
                     >
                         <span onClick={() => categorySelected(category.name)} >
